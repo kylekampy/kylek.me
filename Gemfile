@@ -33,6 +33,7 @@ gem 'jquery-rails'
 
 gem 'authlogic'
 gem 'heroku'
+gem 'execjs'
 
 group :production do
       gem "pg"
