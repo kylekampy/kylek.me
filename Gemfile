@@ -34,6 +34,7 @@ gem 'jquery-rails'
 gem 'authlogic'
 gem 'heroku'
 gem 'execjs'
+gem 'therubyracer'
 
 group :production do
       gem "pg"
