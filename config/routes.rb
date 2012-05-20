@@ -1,6 +1,11 @@
 KylekMe::Application.routes.draw do
   resources :pages
+  resources :users
+  resources :user_sessions
   root :to => 'pages#home'
+
+  match 'login' => 'user_sessions#new'
+  match 'logout' => 'user_sessions#destroy'
   match "(:id)" => 'pages#show'
 
   # The priority is based upon order of creation:

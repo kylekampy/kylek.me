@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  skip_before_filter :require_login, :only => [:show, :home]
   # GET /pages
   # GET /pages.json
   def index
