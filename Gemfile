@@ -36,5 +36,6 @@ gem 'heroku'
 gem 'execjs'
 
 group :production do
-      gem "pg"
+      gem 'pg'
+      gem 'therubyracer-heroku'
 end
