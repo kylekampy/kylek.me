@@ -1,0 +1,11 @@
+<div id="nav">
+  <div id="nav_bar">
+    <% pages = Page.all %>
+    <% pages.each do |page| %>
+    <span class="nav_link" onclick="location.href='/<%=page.id%>'">
+      <%= page.title.downcase %>
+    </span>
+    <% end %>
+
+  </div>
+</div>

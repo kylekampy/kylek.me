@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+ _  __     _      _  __                 
+| |/ /    | |    | |/ /                 
+| ' /_   _| | ___| ' /   _ __ ___   ___ 
+|  <| | | | |/ _ \  <   | '_ ` _ \ / _ \
+| . \ |_| | |  __/ . \ _| | | | | |  __/
+|_|\_\__, |_|\___|_|\_(_)_| |_| |_|\___|
+      __/ |                             
+     |___/                           
+
+So your a view-source kind of guy, huh? Well I guess I can tell you a little more about my technical self then:
+
+I've used Ubuntu up until they switched to Unity. Now I'm a Debian guy. I enjoy installing all sorts of operating systems, just to try them out. I currently have 6 (mostly working :P) operating systems on my netbook right now (Ubuntu 11.04, Debian Squeeze, OS X, Win 7, Android on and SD card, and Linux Mint)
+
+I've corrupted partition tables on drives, and recovered everything successfully.
+I've written the wrong things to the MBR on a drive, and recovered it.
+
+I've even cancelled a print job once.
+
+I'm actually a modest person. It's much easier to say good things about myself when I'm confident it won't actually be read by many at all. I guess calling myself modest is a bit of an oxymoron, but that's ok.
+
+I'm more comfortable at a Unix command prompt than at a party, club, or crowded bar. In fact, I feel at home at a prompt. Makes me think about taking the sysadmin road in the future.
+
+Seriously though, I am a great team player and know the ropes for agile based development.
+
+This page was originally written in PHP, then converted to Ruby on Rails over the course of a few hours using emacs.
+
+If you are interested in hiring me, I'm interested in hearing from you. Please don't hesitate to contact me
+at kkamperschroer+dotme(at)gmail.com.
+
+
+-->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Kyle Kamperschroer's Online Résumé: KyleK.me</title>
+  <link rev="made" href="mailto:kkamperschroer+dotme@gmail.com" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rev="start" href="./" title="Home Page" />
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <!-- Add analytics -->
+</head>
+<body>
+  <div id="body">
+    <div id="header">
+      <span id="title" onclick="location.href='/'">
+        KyleK.me
+      </span>
+      <span id="subtitle">
+        Kyle Kamperschroer's corner of the web.
+      </span>
+    </div>
+    <div id="content">
+      <%= yield %>
+    </div>
+    <hr/>
+    <div id="footer">
+      © Kyle Kamperschroer - 2012
+    </div>
+  </div>
+</body>
+</html>
