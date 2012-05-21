@@ -23,7 +23,7 @@ class PagesController < ApplicationController
   end
 
   def home
-    @page = Page.all[0]
+    @page = Page.find(:all, :order => "id")[0]
 
     respond_to do |format|
       format.html
