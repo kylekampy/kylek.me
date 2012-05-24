@@ -17,9 +17,14 @@
   </div>
   <div class="field">
     <%= f.label :content %><br />
-    <%= f.text_area :content %>
+    <%= f.text_area :content, :id => "text_for_preview", :style => "width: 900px" %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+  <hr/>
+  <div>
+    <span id="preview_area">Update textarea to activate preview</span>
+  </div>
+  <hr/>
 <% end %>
