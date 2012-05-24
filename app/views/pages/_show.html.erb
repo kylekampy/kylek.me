@@ -12,3 +12,5 @@
 <% if logged_in? %>
 <%= link_to 'Edit', edit_page_path(@page) %>
 <% end %>
+
+<small><i>Last updated <%= @page.updated_at.strftime("%m/%d/%Y") %></i></small>

@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
 
   helper_method :logged_in?, :current_user, :current_user_session
 
+  Time.zone = "Central Time (US & Canada)" #Weridly required.
+
   private
 
   def require_login
