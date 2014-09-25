@@ -29,7 +29,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
-gem 'authlogic'
+gem 'authlogic', '~> 3.4.0'
+gem 'scrypt'
 gem 'execjs'
 
 group :production do
