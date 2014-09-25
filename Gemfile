@@ -5,9 +5,6 @@ gem 'rails', '3.1.10'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-#gem 'sqlite3'
-gem 'pg'
-
 gem 'json'
 
 # Gems used only for assets and not required
@@ -35,9 +32,10 @@ gem 'jquery-rails'
 gem 'authlogic'
 gem 'execjs'
 
-#group :production do
-#      gem 'pg'
-#end
+group :production do
+      gem 'pg'
+      gem 'rails_12factor'
+end
 #
 group :development do
 	gem 'sqlite3'
