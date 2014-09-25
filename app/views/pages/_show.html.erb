@@ -1,16 +1,18 @@
 <%= render "navigation" %>
 <hr/>
 
-<p>
-  <h1><%= @page.title %></h1>
-</p>
+<div id="contents">
+	<p>
+		<h1 id="content_title"><%= @page.title %></h1>
+	</p>
 
-<p>
-  <%= @page.content.html_safe %>
-</p>
+	<p id="content_contents">
+		<%= @page.content.html_safe %>
+	</p>
 
-<% if logged_in? %>
-<%= link_to 'Edit', edit_page_path(@page) %>
-<% end %>
+	<% if logged_in? %>
+	<%= link_to 'Edit', edit_page_path(@page) %>
+	<% end %>
 
-<small><i>Last updated <%= @page.updated_at.strftime("%m/%d/%Y") %></i></small>
+	<small><i>Last updated <%= @page.updated_at.strftime("%m/%d/%Y") %></i></small>
+</div>

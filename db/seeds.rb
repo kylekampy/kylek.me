@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Emanuel', :city => cities.first)
+
+Page.create({
+	:title => 'Seeded Page Title',
+	:content => 'Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. \n\nLorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. Lorem ipsum delores something something I can\'t remember. ',
+	:created_at => Time.now,
+	:updated_at => Time.now
+	})

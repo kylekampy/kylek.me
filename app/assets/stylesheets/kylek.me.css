@@ -1,7 +1,23 @@
+@font-face{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Open Sans'), local('OpenSans'), url('/fonts/OpenSans.woff');
+}
+
+@font-face{
+  font-family: 'Open Sans Light';
+  font-style: normal;
+  font-weight: lighter;
+  src: local('Open Sans Light'), local('OpenSansLight'), url('/fonts/OpenSansLight.woff');
+}
+
 body{
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    margin: 0px;
+    padding: 30px;
 }
 a{
     color: #000;
@@ -16,7 +32,7 @@ a:visited{
     }
 
 pre{
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     }
 
 #header{
@@ -30,8 +46,17 @@ pre{
                         }
 
 #subtitle{
+    font-family: 'Open Sans Light', sans-serif;
     font-size: 20px;
     }
+
+#contents{
+    padding: 5px 20px 10px 20px;
+}
+
+#content_contents{
+    font-family: 'Open Sans Light', sans-serif;
+}
 
 #nav_bar{
     margin: 0px;
@@ -44,9 +69,6 @@ pre{
     text-decoration: underline;
     cursor: pointer;
     }
-
-
-
 
 #footer{
     margin: 20px 0px 0px 0px;

@@ -32,10 +32,8 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem 'authlogic'
-gem 'heroku'
 gem 'execjs'
 
 group :production do
       gem 'pg'
-      gem 'therubyracer-heroku'
 end
